@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ваниль &amp; Пряность — Кондитерская студия{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{% url 'home' %}" class="logo">Ваниль <span>&amp;</span> Пряность</a>
+            
+            <button type="button" class="burger-btn" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="{% url 'home' %}" class="nav-link">Главная</a></li>
+                    <li><a href="{% url 'catalog' %}" class="nav-link">Каталог</a></li>
+                    <li><a href="{% url 'constructor' %}" class="nav-link">Конструктор торта</a></li>
+                    <li><a href="{% url 'reviews' %}" class="nav-link">Отзывы</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'my_orders' %}" class="nav-link">Мои заказы</a></li>
+                        <li><a href="{% url 'logout' %}" class="btn btn-outline btn-sm">Выйти ({{ user.username }})</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}" class="nav-link">Войти</a></li>
+                        <li><a href="{% url 'register' %}" class="btn btn-primary btn-sm">Регистрация</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        {% if messages %}
+            <div class="container messages-wrapper">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="{% url 'home' %}" class="logo footer-logo">Ваниль <span>&amp;</span> Пряность</a>
+                <p class="footer-desc">Авторские торты и десерты на заказ с точным расчётом веса и контролем свежести.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Навигация</h3>
+                <ul class="footer-links">
+                    <li><a href="{% url 'catalog' %}">Каталог тортов</a></li>
+                    <li><a href="{% url 'constructor' %}">Собрать свой торт</a></li>
+                    <li><a href="{% url 'reviews' %}">Отзывы клиентов</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Контакты цеха</h3>
+                <p class="footer-text">Ежедневно с 09:00 до 21:00</p>
+                <p class="footer-text">Телефон: +7 (900) 000-00-00</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ИС «Кондитерская» (Ваниль &amp; Пряность). Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

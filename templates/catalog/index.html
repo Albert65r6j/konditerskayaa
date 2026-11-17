@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <span class="badge-accent">Натуральные ингредиенты • Контроль квоты цеха</span>
+            <h1>Авторские торты на заказ с прозрачным расчётом цены</h1>
+            <p class="hero-subtitle">Выберите готовый десерт из каталога или соберите индивидуальный торт в онлайн-конструкторе: выберите коржи, начинку, декор и прикрепите свой эскиз.</p>
+            <div class="hero-actions">
+                <a href="{% url 'constructor' %}" class="btn btn-primary">Собрать торт в конструкторе</a>
+                <a href="{% url 'catalog' %}" class="btn btn-outline">Смотреть каталог</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="hero-card-visual" role="img" aria-label="Фирменный ягодный торт кондитерской">
+                <span class="visual-tag">Хит сезона • от 2 кг</span>
+                <p class="visual-caption">«Ягодный бархат» с крем-чизом и свежей малиной</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Популярные торты из каталога</h2>
+            <a href="{% url 'catalog' %}" class="link-arrow">Весь каталог &rarr;</a>
+        </div>
+
+        <div class="cards-grid">
+            {% for cake in featured_cakes %}
+                <article class="cake-card">
+                    <div class="cake-card-img">
+                        {% if cake.photo %}
+                            <img src="{{ cake.photo.url }}" alt="{{ cake.title }}" width="320" height="220" loading="lazy">
+                        {% else %}
+                            <div class="img-placeholder" role="img" aria-label="Фото торта {{ cake.title }}">
+                                <span>{{ cake.get_category_display }}</span>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="cake-card-body">
+                        <span class="cake-meta">От {{ cake.min_weight_kg|floatformat:1 }} кг • {{ cake.default_sponge.name }}</span>
+                        <h3>{{ cake.title }}</h3>
+                        <p class="cake-desc">{{ cake.description|truncatechars:95 }}</p>
+                        <div class="cake-card-footer">
+                            <span class="cake-price">{{ cake.default_filling.price_per_kg|floatformat:0 }} &#8381;/кг</span>
+                            <a href="{% url 'constructor' %}?base_cake={{ cake.id }}" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </article>
+            {% empty %}
+                <p class="empty-state">Базовые торты скоро появятся в каталоге. Вы можете собрать индивидуальный торт в конструкторе.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container banner-box">
+        <div class="banner-text">
+            <h2>Есть свой эскиз или идея оформления?</h2>
+            <p>Загрузите фотографию желаемого торта в конструкторе. Система сразу покажет свободную мощность цеха на вашу дату и рассчитает точную стоимость без скрытых доплат.</p>
+        </div>
+        <a href="{% url 'constructor' %}" class="btn btn-accent">Перейти в конструктор</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Отзывы наших покупателей</h2>
+            <a href="{% url 'reviews' %}" class="link-arrow">Все отзывы &rarr;</a>
+        </div>
+
+        <div class="reviews-grid">
+            {% for review in latest_reviews %}
+                <article class="review-card">
+                    <div class="review-top">
+                        <strong>{{ review.author.first_name|default:review.author.username }}</strong>
+                        <span class="review-rating">Оценка: {{ review.rating }} / 5</span>
+                    </div>
+                   <p class="review-text">{{ review.text|truncatechars:140 }}</p>
+                    <span class="review-date">Заказ № {{ review.order.order_number }} • {{ review.created_at|date:"d.m.Y" }}</span>
+                </article>
+            {% empty %}
+                <p class="empty-state">Пока нет опубликованных отзывов. Оформите первый заказ и поделитесь впечатлениями!</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
