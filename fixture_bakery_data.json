@@ -1,0 +1,2935 @@
+[
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "role": "admin",
+    "phone": "+7 (900) 100-00-01",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "role": "manager",
+    "phone": "+7 (900) 200-00-01",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "role": "manager",
+    "phone": "+7 (900) 200-00-02",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 4,
+  "fields": {
+    "user": 4,
+    "role": "pastry_chef",
+    "phone": "+7 (900) 300-00-01",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 5,
+  "fields": {
+    "user": 5,
+    "role": "pastry_chef",
+    "phone": "+7 (900) 300-00-02",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 6,
+  "fields": {
+    "user": 6,
+    "role": "pastry_chef",
+    "phone": "+7 (900) 300-00-03",
+    "default_address": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 7,
+  "fields": {
+    "user": 7,
+    "role": "customer",
+    "phone": "+7 (917) 555-01-01",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 3, кв. 5"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 8,
+  "fields": {
+    "user": 8,
+    "role": "customer",
+    "phone": "+7 (917) 555-02-02",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 6, кв. 10"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 9,
+  "fields": {
+    "user": 9,
+    "role": "customer",
+    "phone": "+7 (917) 555-03-03",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 9, кв. 15"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 10,
+  "fields": {
+    "user": 10,
+    "role": "customer",
+    "phone": "+7 (917) 555-04-04",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 12, кв. 20"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 11,
+  "fields": {
+    "user": 11,
+    "role": "customer",
+    "phone": "+7 (917) 555-05-05",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 15, кв. 25"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 12,
+  "fields": {
+    "user": 12,
+    "role": "customer",
+    "phone": "+7 (917) 555-06-06",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 18, кв. 30"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 13,
+  "fields": {
+    "user": 13,
+    "role": "customer",
+    "phone": "+7 (917) 555-07-07",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 21, кв. 35"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 14,
+  "fields": {
+    "user": 14,
+    "role": "customer",
+    "phone": "+7 (917) 555-08-08",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 24, кв. 40"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 15,
+  "fields": {
+    "user": 15,
+    "role": "customer",
+    "phone": "+7 (917) 555-09-09",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 27, кв. 45"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 16,
+  "fields": {
+    "user": 16,
+    "role": "customer",
+    "phone": "+7 (917) 555-10-10",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 30, кв. 50"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 17,
+  "fields": {
+    "user": 17,
+    "role": "customer",
+    "phone": "+7 (917) 555-11-11",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 33, кв. 55"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 18,
+  "fields": {
+    "user": 18,
+    "role": "customer",
+    "phone": "+7 (917) 555-12-12",
+    "default_address": "г. Ульяновск, ул. Гончарова, д. 36, кв. 60"
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 1,
+  "fields": {
+    "name": "Фисташка-малина",
+    "description": "Фисташковый мусс на белом шоколаде, малиновое конфи, крем-чиз.",
+    "price_per_kg": "2300.00",
+    "calories_per_100g": 340,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 2,
+  "fields": {
+    "name": "Три шоколада",
+    "description": "Муссы из горького, молочного и белого бельгийского шоколада.",
+    "price_per_kg": "2150.00",
+    "calories_per_100g": 390,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 3,
+  "fields": {
+    "name": "Манго-маракуйя",
+    "description": "Тропическое пюре манго и маракуйи с нежным сливочным муссом.",
+    "price_per_kg": "2200.00",
+    "calories_per_100g": 295,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 4,
+  "fields": {
+    "name": "Красный бархат с вишней",
+    "description": "Крем-чиз на сливках и пряная вишнёвая прослойка.",
+    "price_per_kg": "1950.00",
+    "calories_per_100g": 355,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 5,
+  "fields": {
+    "name": "Сникерс карамельный",
+    "description": "Домашняя солёная карамель, жареный арахис и шоколадный ганаш.",
+    "price_per_kg": "2100.00",
+    "calories_per_100g": 420,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 6,
+  "fields": {
+    "name": "Медовик классический",
+    "description": "Тонкие медовые коржи со сметанно-сливочным кремом.",
+    "price_per_kg": "1750.00",
+    "calories_per_100g": 360,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 7,
+  "fields": {
+    "name": "Наполеон заварной",
+    "description": "Хрустящие слоёные коржи с ванильным заварным кремом пломбир.",
+    "price_per_kg": "1800.00",
+    "calories_per_100g": 385,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 8,
+  "fields": {
+    "name": "Молочная девочка",
+    "description": "Коржи на сгущённом молоке с кремом дипломат и свежей клубникой.",
+    "price_per_kg": "1900.00",
+    "calories_per_100g": 330,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 9,
+  "fields": {
+    "name": "Чёрный лес (Шварцвальд)",
+    "description": "Шоколадный крем, вишня в собственном соку и взбитые сливки.",
+    "price_per_kg": "2000.00",
+    "calories_per_100g": 345,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 10,
+  "fields": {
+    "name": "Рафаэлло кокосовый",
+    "description": "Кокосовый крем на маскарпоне, хрустящий миндаль и вафельная крошка.",
+    "price_per_kg": "2150.00",
+    "calories_per_100g": 405,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 11,
+  "fields": {
+    "name": "Груша-горгонзола",
+    "description": "Авторская начинка с карамелизированной грушей и сыром с голубой плесенью.",
+    "price_per_kg": "2450.00",
+    "calories_per_100g": 350,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.filling",
+  "pk": 12,
+  "fields": {
+    "name": "Клубничный йогурт",
+    "description": "Лёгкий йогуртовый мусс с кусочками садовой клубники (низкокалорийный).",
+    "price_per_kg": "1850.00",
+    "calories_per_100g": 250,
+    "cut_photo": "",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 1,
+  "fields": {
+    "name": "Ванильный шифоновый бисквит",
+    "description": "Воздушный бисквит с натуральной бурбонской ванилью.",
+    "extra_price_per_kg": "0.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 2,
+  "fields": {
+    "name": "Шоколадный брауни-бисквит",
+    "description": "Влажный насыщенный бисквит на тёмном какао.",
+    "extra_price_per_kg": "100.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 3,
+  "fields": {
+    "name": "Красный бархат",
+    "description": "Бархатистый бисквит с лёгкой шоколадной ноткой.",
+    "extra_price_per_kg": "100.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 4,
+  "fields": {
+    "name": "Медовые коржи",
+    "description": "Ароматные тонкие коржи на цветочном мёде.",
+    "extra_price_per_kg": "50.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 5,
+  "fields": {
+    "name": "Слоёные коржи",
+    "description": "Классическое рубленое слоёное тесто.",
+    "extra_price_per_kg": "50.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 6,
+  "fields": {
+    "name": "Миндальный дакуаз",
+    "description": "Ореховый безглютеновый корж на миндальной муке.",
+    "extra_price_per_kg": "250.00",
+    "is_gluten_free": true
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 7,
+  "fields": {
+    "name": "Фисташковый бисквит",
+    "description": "Бисквит с добавлением натуральной фисташковой пасты.",
+    "extra_price_per_kg": "200.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 8,
+  "fields": {
+    "name": "Морковно-пряный бисквит",
+    "description": "С грецким орехом, корицей и цедрой апельсина.",
+    "extra_price_per_kg": "150.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 9,
+  "fields": {
+    "name": "Безглютеновый рисовый бисквит",
+    "description": "Лёгкий бисквит на рисовой и кукурузной муке.",
+    "extra_price_per_kg": "200.00",
+    "is_gluten_free": true
+  }
+},
+{
+  "model": "catalog.spongetype",
+  "pk": 10,
+  "fields": {
+    "name": "Маковый бисквит",
+    "description": "Классический бисквит с обжаренным кондитерским маком.",
+    "extra_price_per_kg": "100.00",
+    "is_gluten_free": false
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 1,
+  "fields": {
+    "title": "Авторский торт №1 «Фисташка-малина»",
+    "category": "kids",
+    "description": "Фирменный дизайн №1 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 1,
+    "default_sponge": 1,
+    "photo": "",
+    "rating": "4.69",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.485Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 2,
+  "fields": {
+    "title": "Авторский торт №2 «Три шоколада»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №2 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 2,
+    "default_sponge": 2,
+    "photo": "",
+    "rating": "4.82",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.485Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 3,
+  "fields": {
+    "title": "Авторский торт №3 «Манго-маракуйя»",
+    "category": "bento",
+    "description": "Фирменный дизайн №3 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 3,
+    "default_sponge": 3,
+    "photo": "",
+    "rating": "4.75",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.486Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 4,
+  "fields": {
+    "title": "Авторский торт №4 «Красный бархат с вишней»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №4 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 4,
+    "default_sponge": 4,
+    "photo": "",
+    "rating": "4.62",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.486Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 5,
+  "fields": {
+    "title": "Авторский торт №5 «Сникерс карамельный»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №5 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 5,
+    "default_sponge": 5,
+    "photo": "",
+    "rating": "4.75",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.486Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 6,
+  "fields": {
+    "title": "Авторский торт №6 «Медовик классический»",
+    "category": "kids",
+    "description": "Фирменный дизайн №6 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 6,
+    "default_sponge": 6,
+    "photo": "",
+    "rating": "4.69",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.487Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 7,
+  "fields": {
+    "title": "Авторский торт №7 «Наполеон заварной»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №7 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 7,
+    "default_sponge": 7,
+    "photo": "",
+    "rating": "4.69",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.487Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 8,
+  "fields": {
+    "title": "Авторский торт №8 «Молочная девочка»",
+    "category": "bento",
+    "description": "Фирменный дизайн №8 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 8,
+    "default_sponge": 8,
+    "photo": "",
+    "rating": "4.64",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.488Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 9,
+  "fields": {
+    "title": "Авторский торт №9 «Чёрный лес (Шварцвальд)»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №9 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 9,
+    "default_sponge": 9,
+    "photo": "",
+    "rating": "4.96",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.489Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 10,
+  "fields": {
+    "title": "Авторский торт №10 «Рафаэлло кокосовый»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №10 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 10,
+    "default_sponge": 10,
+    "photo": "",
+    "rating": "4.63",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.490Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 11,
+  "fields": {
+    "title": "Авторский торт №11 «Груша-горгонзола»",
+    "category": "kids",
+    "description": "Фирменный дизайн №11 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 11,
+    "default_sponge": 1,
+    "photo": "",
+    "rating": "4.85",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.490Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 12,
+  "fields": {
+    "title": "Авторский торт №12 «Клубничный йогурт»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №12 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 12,
+    "default_sponge": 2,
+    "photo": "",
+    "rating": "4.77",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.491Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 13,
+  "fields": {
+    "title": "Авторский торт №13 «Фисташка-малина»",
+    "category": "bento",
+    "description": "Фирменный дизайн №13 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 1,
+    "default_sponge": 3,
+    "photo": "",
+    "rating": "4.69",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.491Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 14,
+  "fields": {
+    "title": "Авторский торт №14 «Три шоколада»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №14 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 2,
+    "default_sponge": 4,
+    "photo": "",
+    "rating": "4.95",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.491Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 15,
+  "fields": {
+    "title": "Авторский торт №15 «Манго-маракуйя»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №15 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 3,
+    "default_sponge": 5,
+    "photo": "",
+    "rating": "4.75",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.492Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 16,
+  "fields": {
+    "title": "Авторский торт №16 «Красный бархат с вишней»",
+    "category": "kids",
+    "description": "Фирменный дизайн №16 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 4,
+    "default_sponge": 6,
+    "photo": "",
+    "rating": "4.81",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.492Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 17,
+  "fields": {
+    "title": "Авторский торт №17 «Сникерс карамельный»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №17 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 5,
+    "default_sponge": 7,
+    "photo": "",
+    "rating": "4.74",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.493Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 18,
+  "fields": {
+    "title": "Авторский торт №18 «Медовик классический»",
+    "category": "bento",
+    "description": "Фирменный дизайн №18 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 6,
+    "default_sponge": 8,
+    "photo": "",
+    "rating": "4.92",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.493Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 19,
+  "fields": {
+    "title": "Авторский торт №19 «Наполеон заварной»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №19 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 7,
+    "default_sponge": 9,
+    "photo": "",
+    "rating": "4.88",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.494Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 20,
+  "fields": {
+    "title": "Авторский торт №20 «Молочная девочка»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №20 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 8,
+    "default_sponge": 10,
+    "photo": "",
+    "rating": "4.77",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.494Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 21,
+  "fields": {
+    "title": "Авторский торт №21 «Чёрный лес (Шварцвальд)»",
+    "category": "kids",
+    "description": "Фирменный дизайн №21 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 9,
+    "default_sponge": 1,
+    "photo": "",
+    "rating": "4.80",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.495Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 22,
+  "fields": {
+    "title": "Авторский торт №22 «Рафаэлло кокосовый»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №22 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 10,
+    "default_sponge": 2,
+    "photo": "",
+    "rating": "4.87",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.495Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 23,
+  "fields": {
+    "title": "Авторский торт №23 «Груша-горгонзола»",
+    "category": "bento",
+    "description": "Фирменный дизайн №23 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 11,
+    "default_sponge": 3,
+    "photo": "",
+    "rating": "4.98",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.495Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 24,
+  "fields": {
+    "title": "Авторский торт №24 «Клубничный йогурт»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №24 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 12,
+    "default_sponge": 4,
+    "photo": "",
+    "rating": "4.66",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.496Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 25,
+  "fields": {
+    "title": "Авторский торт №25 «Фисташка-малина»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №25 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 1,
+    "default_sponge": 5,
+    "photo": "",
+    "rating": "4.98",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.496Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 26,
+  "fields": {
+    "title": "Авторский торт №26 «Три шоколада»",
+    "category": "kids",
+    "description": "Фирменный дизайн №26 для категории «Детские торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 2,
+    "default_sponge": 6,
+    "photo": "",
+    "rating": "4.80",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.497Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 27,
+  "fields": {
+    "title": "Авторский торт №27 «Манго-маракуйя»",
+    "category": "wedding",
+    "description": "Фирменный дизайн №27 для категории «Свадебные торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 3,
+    "default_sponge": 7,
+    "photo": "",
+    "rating": "4.62",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.497Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 28,
+  "fields": {
+    "title": "Авторский торт №28 «Красный бархат с вишней»",
+    "category": "bento",
+    "description": "Фирменный дизайн №28 для категории «Бенто-торты». Идеальный баланс вкуса.",
+    "min_weight_kg": "0.50",
+    "default_filling": 4,
+    "default_sponge": 8,
+    "photo": "",
+    "rating": "4.92",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.497Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 29,
+  "fields": {
+    "title": "Авторский торт №29 «Сникерс карамельный»",
+    "category": "holiday",
+    "description": "Фирменный дизайн №29 для категории «Праздничные и юбилейные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 5,
+    "default_sponge": 9,
+    "photo": "",
+    "rating": "4.94",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.498Z"
+  }
+},
+{
+  "model": "catalog.basecake",
+  "pk": 30,
+  "fields": {
+    "title": "Авторский торт №30 «Медовик классический»",
+    "category": "corporate",
+    "description": "Фирменный дизайн №30 для категории «Корпоративные». Идеальный баланс вкуса.",
+    "min_weight_kg": "2.00",
+    "default_filling": 6,
+    "default_sponge": 10,
+    "photo": "",
+    "rating": "4.63",
+    "is_active": true,
+    "created_at": "2026-11-14T17:58:42.498Z"
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 1,
+  "fields": {
+    "name": "Базовое выравнивание крем-чизом",
+    "complexity": "basic",
+    "surcharge": "0.00",
+    "prep_hours": "0.5",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 2,
+  "fields": {
+    "name": "Поздравительная надпись кремом",
+    "complexity": "basic",
+    "surcharge": "200.00",
+    "prep_hours": "0.3",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 3,
+  "fields": {
+    "name": "Шоколадные подтёки",
+    "complexity": "basic",
+    "surcharge": "350.00",
+    "prep_hours": "0.5",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 4,
+  "fields": {
+    "name": "Ягодный венок (свежая малина и голубика)",
+    "complexity": "basic",
+    "surcharge": "750.00",
+    "prep_hours": "0.8",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 5,
+  "fields": {
+    "name": "Акриловый топпер с надписью",
+    "complexity": "basic",
+    "surcharge": "450.00",
+    "prep_hours": "0.2",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 6,
+  "fields": {
+    "name": "Съедобная фотопечать на сахарной бумаге",
+    "complexity": "complex",
+    "surcharge": "850.00",
+    "prep_hours": "1.0",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 7,
+  "fields": {
+    "name": "Ручная лепка фигурки из мастики",
+    "complexity": "complex",
+    "surcharge": "1500.00",
+    "prep_hours": "2.5",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 8,
+  "fields": {
+    "name": "Шоколадные сферы и темперированный декор",
+    "complexity": "complex",
+    "surcharge": "1100.00",
+    "prep_hours": "1.5",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 9,
+  "fields": {
+    "name": "Велюровое покрытие (какао-масло)",
+    "complexity": "complex",
+    "surcharge": "900.00",
+    "prep_hours": "1.0",
+    "is_active": true
+  }
+},
+{
+  "model": "catalog.decor",
+  "pk": 10,
+  "fields": {
+    "name": "Живые цветы с изоляцией стеблей",
+    "complexity": "complex",
+    "surcharge": "1200.00",
+    "prep_hours": "1.2",
+    "is_active": true
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 1,
+  "fields": {
+    "shift_date": "2026-11-07",
+    "pastry_chef": 5,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 2,
+  "fields": {
+    "shift_date": "2026-11-08",
+    "pastry_chef": 4,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 3,
+  "fields": {
+    "shift_date": "2026-11-09",
+    "pastry_chef": 6,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 4,
+  "fields": {
+    "shift_date": "2026-11-10",
+    "pastry_chef": 5,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 5,
+  "fields": {
+    "shift_date": "2026-11-11",
+    "pastry_chef": 4,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 6,
+  "fields": {
+    "shift_date": "2026-11-12",
+    "pastry_chef": 6,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "7.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 7,
+  "fields": {
+    "shift_date": "2026-11-13",
+    "pastry_chef": 5,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "8.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 8,
+  "fields": {
+    "shift_date": "2026-11-14",
+    "pastry_chef": 4,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "4.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 9,
+  "fields": {
+    "shift_date": "2026-11-15",
+    "pastry_chef": 5,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "5.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 10,
+  "fields": {
+    "shift_date": "2026-11-16",
+    "pastry_chef": 6,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "5.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 11,
+  "fields": {
+    "shift_date": "2026-11-17",
+    "pastry_chef": 4,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "4.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 12,
+  "fields": {
+    "shift_date": "2026-11-18",
+    "pastry_chef": 5,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "4.50",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 13,
+  "fields": {
+    "shift_date": "2026-11-19",
+    "pastry_chef": 6,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "5.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "production.productionday",
+  "pk": 14,
+  "fields": {
+    "shift_date": "2026-11-20",
+    "pastry_chef": 4,
+    "max_weight_kg": "25.00",
+    "booked_weight_kg": "4.00",
+    "notes": "Плановая смена кондитерского цеха"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "order_number": "ORD-2026-0001",
+    "customer": 7,
+    "production_day": 1,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.00",
+    "total_price": "5700.00",
+    "prepayment_amount": "2850.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.504Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "order_number": "ORD-2026-0002",
+    "customer": 8,
+    "production_day": 2,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 6, кв. 10",
+    "total_weight_kg": "3.50",
+    "total_price": "10300.00",
+    "prepayment_amount": "5150.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.509Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "order_number": "ORD-2026-0003",
+    "customer": 9,
+    "production_day": 3,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "4625.00",
+    "prepayment_amount": "2312.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.510Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "order_number": "ORD-2026-0004",
+    "customer": 10,
+    "production_day": 4,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 12, кв. 20",
+    "total_weight_kg": "1.50",
+    "total_price": "3725.00",
+    "prepayment_amount": "1862.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.512Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 5,
+  "fields": {
+    "order_number": "ORD-2026-0005",
+    "customer": 11,
+    "production_day": 5,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.00",
+    "total_price": "9600.00",
+    "prepayment_amount": "4800.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.513Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 6,
+  "fields": {
+    "order_number": "ORD-2026-0006",
+    "customer": 12,
+    "production_day": 6,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 18, кв. 30",
+    "total_weight_kg": "3.50",
+    "total_price": "10450.00",
+    "prepayment_amount": "5225.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.515Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 7,
+  "fields": {
+    "order_number": "ORD-2026-0007",
+    "customer": 13,
+    "production_day": 7,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "7075.00",
+    "prepayment_amount": "3537.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.517Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 8,
+  "fields": {
+    "order_number": "ORD-2026-0008",
+    "customer": 14,
+    "production_day": 8,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 24, кв. 40",
+    "total_weight_kg": "2.50",
+    "total_price": "8100.00",
+    "prepayment_amount": "4050.00",
+    "status": "prepaid",
+    "created_at": "2026-11-14T17:58:42.518Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 9,
+  "fields": {
+    "order_number": "ORD-2026-0009",
+    "customer": 15,
+    "production_day": 9,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.00",
+    "total_price": "4250.00",
+    "prepayment_amount": "0.00",
+    "status": "new",
+    "created_at": "2026-11-14T17:58:42.520Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 10,
+  "fields": {
+    "order_number": "ORD-2026-0010",
+    "customer": 16,
+    "production_day": 10,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 30, кв. 50",
+    "total_weight_kg": "1.50",
+    "total_price": "5300.00",
+    "prepayment_amount": "2650.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.522Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 11,
+  "fields": {
+    "order_number": "ORD-2026-0011",
+    "customer": 17,
+    "production_day": 11,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "7575.00",
+    "prepayment_amount": "3787.50",
+    "status": "ready",
+    "created_at": "2026-11-14T17:58:42.523Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 12,
+  "fields": {
+    "order_number": "ORD-2026-0012",
+    "customer": 18,
+    "production_day": 12,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 36, кв. 60",
+    "total_weight_kg": "1.50",
+    "total_price": "4700.00",
+    "prepayment_amount": "2350.00",
+    "status": "in_progress",
+    "created_at": "2026-11-14T17:58:42.525Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 13,
+  "fields": {
+    "order_number": "ORD-2026-0013",
+    "customer": 7,
+    "production_day": 13,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "5625.00",
+    "prepayment_amount": "2812.50",
+    "status": "prepaid",
+    "created_at": "2026-11-14T17:58:42.526Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 14,
+  "fields": {
+    "order_number": "ORD-2026-0014",
+    "customer": 8,
+    "production_day": 14,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 6, кв. 10",
+    "total_weight_kg": "2.00",
+    "total_price": "5850.00",
+    "prepayment_amount": "0.00",
+    "status": "new",
+    "created_at": "2026-11-14T17:58:42.528Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 15,
+  "fields": {
+    "order_number": "ORD-2026-0015",
+    "customer": 9,
+    "production_day": 1,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.00",
+    "total_price": "6350.00",
+    "prepayment_amount": "3175.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.530Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 16,
+  "fields": {
+    "order_number": "ORD-2026-0016",
+    "customer": 10,
+    "production_day": 2,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 12, кв. 20",
+    "total_weight_kg": "2.00",
+    "total_price": "5350.00",
+    "prepayment_amount": "2675.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.531Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 17,
+  "fields": {
+    "order_number": "ORD-2026-0017",
+    "customer": 11,
+    "production_day": 3,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "6950.00",
+    "prepayment_amount": "3475.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.533Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 18,
+  "fields": {
+    "order_number": "ORD-2026-0018",
+    "customer": 12,
+    "production_day": 4,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 18, кв. 30",
+    "total_weight_kg": "3.00",
+    "total_price": "10100.00",
+    "prepayment_amount": "5050.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.534Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "order_number": "ORD-2026-0019",
+    "customer": 13,
+    "production_day": 5,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.00",
+    "total_price": "4600.00",
+    "prepayment_amount": "2300.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.536Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 20,
+  "fields": {
+    "order_number": "ORD-2026-0020",
+    "customer": 14,
+    "production_day": 6,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 24, кв. 40",
+    "total_weight_kg": "1.50",
+    "total_price": "5500.00",
+    "prepayment_amount": "2750.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.537Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 21,
+  "fields": {
+    "order_number": "ORD-2026-0021",
+    "customer": 15,
+    "production_day": 7,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.00",
+    "total_price": "5900.00",
+    "prepayment_amount": "2950.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.539Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 22,
+  "fields": {
+    "order_number": "ORD-2026-0022",
+    "customer": 16,
+    "production_day": 8,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 30, кв. 50",
+    "total_weight_kg": "2.00",
+    "total_price": "4850.00",
+    "prepayment_amount": "2425.00",
+    "status": "in_progress",
+    "created_at": "2026-11-14T17:58:42.540Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 23,
+  "fields": {
+    "order_number": "ORD-2026-0023",
+    "customer": 17,
+    "production_day": 9,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.00",
+    "total_price": "8250.00",
+    "prepayment_amount": "4125.00",
+    "status": "prepaid",
+    "created_at": "2026-11-14T17:58:42.542Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 24,
+  "fields": {
+    "order_number": "ORD-2026-0024",
+    "customer": 18,
+    "production_day": 10,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 36, кв. 60",
+    "total_weight_kg": "3.50",
+    "total_price": "8975.00",
+    "prepayment_amount": "0.00",
+    "status": "new",
+    "created_at": "2026-11-14T17:58:42.543Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 25,
+  "fields": {
+    "order_number": "ORD-2026-0025",
+    "customer": 7,
+    "production_day": 11,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "1.50",
+    "total_price": "3675.00",
+    "prepayment_amount": "1837.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.545Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 26,
+  "fields": {
+    "order_number": "ORD-2026-0026",
+    "customer": 8,
+    "production_day": 12,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 6, кв. 10",
+    "total_weight_kg": "3.00",
+    "total_price": "7350.00",
+    "prepayment_amount": "3675.00",
+    "status": "ready",
+    "created_at": "2026-11-14T17:58:42.546Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 27,
+  "fields": {
+    "order_number": "ORD-2026-0027",
+    "customer": 9,
+    "production_day": 13,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "2.50",
+    "total_price": "5075.00",
+    "prepayment_amount": "2537.50",
+    "status": "in_progress",
+    "created_at": "2026-11-14T17:58:42.548Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 28,
+  "fields": {
+    "order_number": "ORD-2026-0028",
+    "customer": 10,
+    "production_day": 14,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 12, кв. 20",
+    "total_weight_kg": "2.00",
+    "total_price": "4600.00",
+    "prepayment_amount": "2300.00",
+    "status": "prepaid",
+    "created_at": "2026-11-14T17:58:42.549Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 29,
+  "fields": {
+    "order_number": "ORD-2026-0029",
+    "customer": 11,
+    "production_day": 1,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.50",
+    "total_price": "9675.00",
+    "prepayment_amount": "4837.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.551Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 30,
+  "fields": {
+    "order_number": "ORD-2026-0030",
+    "customer": 12,
+    "production_day": 2,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 18, кв. 30",
+    "total_weight_kg": "2.50",
+    "total_price": "6950.00",
+    "prepayment_amount": "3475.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.552Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 31,
+  "fields": {
+    "order_number": "ORD-2026-0031",
+    "customer": 13,
+    "production_day": 3,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.50",
+    "total_price": "8250.00",
+    "prepayment_amount": "4125.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.554Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 32,
+  "fields": {
+    "order_number": "ORD-2026-0032",
+    "customer": 14,
+    "production_day": 4,
+    "delivery_interval": "16:00–19:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 24, кв. 40",
+    "total_weight_kg": "3.50",
+    "total_price": "9200.00",
+    "prepayment_amount": "4600.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.556Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 33,
+  "fields": {
+    "order_number": "ORD-2026-0033",
+    "customer": 15,
+    "production_day": 5,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.50",
+    "total_price": "7375.00",
+    "prepayment_amount": "3687.50",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.558Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 34,
+  "fields": {
+    "order_number": "ORD-2026-0034",
+    "customer": 16,
+    "production_day": 6,
+    "delivery_interval": "10:00–13:00",
+    "delivery_type": "courier",
+    "delivery_address": "г. Ульяновск, ул. Гончарова, д. 30, кв. 50",
+    "total_weight_kg": "2.00",
+    "total_price": "4750.00",
+    "prepayment_amount": "2375.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.559Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 35,
+  "fields": {
+    "order_number": "ORD-2026-0035",
+    "customer": 17,
+    "production_day": 7,
+    "delivery_interval": "13:00–16:00",
+    "delivery_type": "pickup",
+    "delivery_address": "",
+    "total_weight_kg": "3.00",
+    "total_price": "8300.00",
+    "prepayment_amount": "4150.00",
+    "status": "completed",
+    "created_at": "2026-11-14T17:58:42.561Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "base_cake": 2,
+    "filling": 3,
+    "sponge_type": 2,
+    "weight_kg": "2.00",
+    "inscription_text": "",
+    "item_price": "5700.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "base_cake": 3,
+    "filling": 5,
+    "sponge_type": 3,
+    "weight_kg": "3.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "10300.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 4,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "4625.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "base_cake": 5,
+    "filling": 9,
+    "sponge_type": 5,
+    "weight_kg": "1.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "3725.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "base_cake": 6,
+    "filling": 11,
+    "sponge_type": 6,
+    "weight_kg": "3.00",
+    "inscription_text": "",
+    "item_price": "9600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "base_cake": null,
+    "filling": 1,
+    "sponge_type": 7,
+    "weight_kg": "3.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "10450.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "base_cake": 8,
+    "filling": 3,
+    "sponge_type": 8,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "7075.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "base_cake": 9,
+    "filling": 5,
+    "sponge_type": 9,
+    "weight_kg": "2.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "8100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 10,
+    "weight_kg": "2.00",
+    "inscription_text": "",
+    "item_price": "4250.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "base_cake": 11,
+    "filling": 9,
+    "sponge_type": 1,
+    "weight_kg": "1.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "5300.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 11,
+  "fields": {
+    "order": 11,
+    "base_cake": 12,
+    "filling": 11,
+    "sponge_type": 2,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "7575.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 12,
+    "base_cake": null,
+    "filling": 1,
+    "sponge_type": 3,
+    "weight_kg": "1.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "4700.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 13,
+  "fields": {
+    "order": 13,
+    "base_cake": 14,
+    "filling": 3,
+    "sponge_type": 4,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "5625.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 14,
+  "fields": {
+    "order": 14,
+    "base_cake": 15,
+    "filling": 5,
+    "sponge_type": 5,
+    "weight_kg": "2.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "5850.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 15,
+  "fields": {
+    "order": 15,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 6,
+    "weight_kg": "3.00",
+    "inscription_text": "",
+    "item_price": "6350.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 16,
+    "base_cake": 17,
+    "filling": 9,
+    "sponge_type": 7,
+    "weight_kg": "2.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "5350.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 17,
+    "base_cake": 18,
+    "filling": 11,
+    "sponge_type": 8,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "6950.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 18,
+    "base_cake": null,
+    "filling": 1,
+    "sponge_type": 9,
+    "weight_kg": "3.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "10100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 19,
+    "base_cake": 20,
+    "filling": 3,
+    "sponge_type": 10,
+    "weight_kg": "2.00",
+    "inscription_text": "",
+    "item_price": "4600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 20,
+    "base_cake": 21,
+    "filling": 5,
+    "sponge_type": 1,
+    "weight_kg": "1.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "5500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 21,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 2,
+    "weight_kg": "3.00",
+    "inscription_text": "",
+    "item_price": "5900.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 22,
+    "base_cake": 23,
+    "filling": 9,
+    "sponge_type": 3,
+    "weight_kg": "2.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "4850.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 23,
+    "base_cake": 24,
+    "filling": 11,
+    "sponge_type": 4,
+    "weight_kg": "3.00",
+    "inscription_text": "",
+    "item_price": "8250.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 24,
+    "base_cake": null,
+    "filling": 1,
+    "sponge_type": 5,
+    "weight_kg": "3.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "8975.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 25,
+    "base_cake": 26,
+    "filling": 3,
+    "sponge_type": 6,
+    "weight_kg": "1.50",
+    "inscription_text": "",
+    "item_price": "3675.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 26,
+    "base_cake": 27,
+    "filling": 5,
+    "sponge_type": 7,
+    "weight_kg": "3.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "7350.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 27,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 8,
+    "weight_kg": "2.50",
+    "inscription_text": "",
+    "item_price": "5075.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 28,
+    "base_cake": 29,
+    "filling": 9,
+    "sponge_type": 9,
+    "weight_kg": "2.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "4600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 29,
+  "fields": {
+    "order": 29,
+    "base_cake": 30,
+    "filling": 11,
+    "sponge_type": 10,
+    "weight_kg": "3.50",
+    "inscription_text": "",
+    "item_price": "9675.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 30,
+  "fields": {
+    "order": 30,
+    "base_cake": null,
+    "filling": 1,
+    "sponge_type": 1,
+    "weight_kg": "2.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "6950.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 31,
+  "fields": {
+    "order": 31,
+    "base_cake": 2,
+    "filling": 3,
+    "sponge_type": 2,
+    "weight_kg": "3.50",
+    "inscription_text": "",
+    "item_price": "8250.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 32,
+  "fields": {
+    "order": 32,
+    "base_cake": 3,
+    "filling": 5,
+    "sponge_type": 3,
+    "weight_kg": "3.50",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "9200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 33,
+    "base_cake": null,
+    "filling": 7,
+    "sponge_type": 4,
+    "weight_kg": "3.50",
+    "inscription_text": "",
+    "item_price": "7375.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 34,
+    "base_cake": 5,
+    "filling": 9,
+    "sponge_type": 5,
+    "weight_kg": "2.00",
+    "inscription_text": "С Днём Рождения!",
+    "item_price": "4750.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 35,
+  "fields": {
+    "order": 35,
+    "base_cake": 6,
+    "filling": 11,
+    "sponge_type": 6,
+    "weight_kg": "3.00",
+    "inscription_text": "",
+    "item_price": "8300.00"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 1,
+  "fields": {
+    "order_item": 1,
+    "decor": 8,
+    "applied_surcharge": "1100.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 2,
+  "fields": {
+    "order_item": 2,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 3,
+  "fields": {
+    "order_item": 2,
+    "decor": 8,
+    "applied_surcharge": "1100.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 4,
+  "fields": {
+    "order_item": 3,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 5,
+  "fields": {
+    "order_item": 4,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 6,
+  "fields": {
+    "order_item": 4,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 7,
+  "fields": {
+    "order_item": 5,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 8,
+  "fields": {
+    "order_item": 6,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 9,
+  "fields": {
+    "order_item": 6,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 10,
+  "fields": {
+    "order_item": 7,
+    "decor": 10,
+    "applied_surcharge": "1200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 11,
+  "fields": {
+    "order_item": 8,
+    "decor": 6,
+    "applied_surcharge": "850.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 12,
+  "fields": {
+    "order_item": 8,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 13,
+  "fields": {
+    "order_item": 9,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 14,
+  "fields": {
+    "order_item": 10,
+    "decor": 10,
+    "applied_surcharge": "1200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 15,
+  "fields": {
+    "order_item": 10,
+    "decor": 8,
+    "applied_surcharge": "1100.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 16,
+  "fields": {
+    "order_item": 11,
+    "decor": 10,
+    "applied_surcharge": "1200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 17,
+  "fields": {
+    "order_item": 12,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 18,
+  "fields": {
+    "order_item": 12,
+    "decor": 9,
+    "applied_surcharge": "900.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 19,
+  "fields": {
+    "order_item": 13,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 20,
+  "fields": {
+    "order_item": 14,
+    "decor": 10,
+    "applied_surcharge": "1200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 21,
+  "fields": {
+    "order_item": 14,
+    "decor": 3,
+    "applied_surcharge": "350.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 22,
+  "fields": {
+    "order_item": 15,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 23,
+  "fields": {
+    "order_item": 16,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 24,
+  "fields": {
+    "order_item": 16,
+    "decor": 4,
+    "applied_surcharge": "750.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 25,
+  "fields": {
+    "order_item": 17,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 26,
+  "fields": {
+    "order_item": 18,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 27,
+  "fields": {
+    "order_item": 18,
+    "decor": 8,
+    "applied_surcharge": "1100.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 28,
+  "fields": {
+    "order_item": 19,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 29,
+  "fields": {
+    "order_item": 20,
+    "decor": 6,
+    "applied_surcharge": "850.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 30,
+  "fields": {
+    "order_item": 20,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 31,
+  "fields": {
+    "order_item": 21,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 32,
+  "fields": {
+    "order_item": 22,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 33,
+  "fields": {
+    "order_item": 22,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 34,
+  "fields": {
+    "order_item": 23,
+    "decor": 4,
+    "applied_surcharge": "750.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 35,
+  "fields": {
+    "order_item": 24,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 36,
+  "fields": {
+    "order_item": 24,
+    "decor": 4,
+    "applied_surcharge": "750.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 37,
+  "fields": {
+    "order_item": 25,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 38,
+  "fields": {
+    "order_item": 26,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 39,
+  "fields": {
+    "order_item": 26,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 40,
+  "fields": {
+    "order_item": 27,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 41,
+  "fields": {
+    "order_item": 28,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 42,
+  "fields": {
+    "order_item": 28,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 43,
+  "fields": {
+    "order_item": 29,
+    "decor": 4,
+    "applied_surcharge": "750.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 44,
+  "fields": {
+    "order_item": 30,
+    "decor": 4,
+    "applied_surcharge": "750.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 45,
+  "fields": {
+    "order_item": 30,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 46,
+  "fields": {
+    "order_item": 31,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 47,
+  "fields": {
+    "order_item": 32,
+    "decor": 1,
+    "applied_surcharge": "0.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 48,
+  "fields": {
+    "order_item": 32,
+    "decor": 7,
+    "applied_surcharge": "1500.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 49,
+  "fields": {
+    "order_item": 33,
+    "decor": 9,
+    "applied_surcharge": "900.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 50,
+  "fields": {
+    "order_item": 34,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 51,
+  "fields": {
+    "order_item": 34,
+    "decor": 5,
+    "applied_surcharge": "450.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "orders.orderitemdecor",
+  "pk": 52,
+  "fields": {
+    "order_item": 35,
+    "decor": 2,
+    "applied_surcharge": "200.00",
+    "custom_note": "Согласовано в конструкторе"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "author": 7,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0001. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.562Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "author": 8,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0002. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.563Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "author": 9,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0003. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.563Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "author": 10,
+    "rating": 4,
+    "text": "Заказывали торт №ORD-2026-0004. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.564Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "author": 11,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0005. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.564Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "author": 12,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0006. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.564Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "author": 13,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0007. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.565Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "order": 10,
+    "author": 16,
+    "rating": 4,
+    "text": "Заказывали торт №ORD-2026-0010. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.565Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 9,
+  "fields": {
+    "order": 15,
+    "author": 9,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0015. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.566Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 10,
+  "fields": {
+    "order": 16,
+    "author": 10,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0016. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.566Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 11,
+  "fields": {
+    "order": 17,
+    "author": 11,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0017. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.566Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "order": 18,
+    "author": 12,
+    "rating": 4,
+    "text": "Заказывали торт №ORD-2026-0018. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.567Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "order": 19,
+    "author": 13,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0019. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.567Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 14,
+  "fields": {
+    "order": 20,
+    "author": 14,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0020. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.568Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 15,
+  "fields": {
+    "order": 21,
+    "author": 15,
+    "rating": 5,
+    "text": "Заказывали торт №ORD-2026-0021. Начинка свежая, доставили точно в интервал!",
+    "result_photo": "",
+    "is_published": true,
+    "created_at": "2026-11-14T17:58:42.568Z"
+  }
+}
+]
