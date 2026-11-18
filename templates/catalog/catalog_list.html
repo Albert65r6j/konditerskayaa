@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}Каталог тортов — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <h1>Каталог тортов и десертов</h1>
+                <p class="text-muted">Найдено позиций: {{ total_count }}. Выберите готовый рецепт или настройте в конструкторе.</p>
+            </div>
+        </div>
+
+        <form method="get" action="{% url 'catalog' %}" class="filter-bar">
+            <div class="filter-group filter-search">
+                <label for="searchInput" class="sr-only">Поиск по названию</label>
+                <input type="text" id="searchInput" name="q" value="{{ query }}" class="form-control" placeholder="Поиск по названию или описанию...">
+            </div>
+
+            <div class="filter-group">
+                <label for="categorySelect" class="sr-only">Категория</label>
+                <select id="categorySelect" name="category" class="form-control">
+                    <option value="">Все категории</option>
+                    {% for code, label in categories %}
+                        <option value="{{ code }}" {% if selected_category == code %}selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="fillingSelect" class="sr-only">Начинка</label>
+                <select id="fillingSelect" name="filling" class="form-control">
+                    <option value="">Любая начинка</option>
+                    {% for filling in fillings %}
+                        <option value="{{ filling.id }}" {% if selected_filling == filling.id|stringformat:"s" %}selected{% endif %}>{{ filling.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="filter-actions">
+                <button type="submit" class="btn btn-primary">Найти</button>
+                {% if query or selected_category or selected_filling %}
+                    <a href="{% url 'catalog' %}" class="btn btn-outline">Сбросить</a>
+                {% endif %}
+            </div>
+        </form>
+
+        <div class="cards-grid">
+            {% for cake in page_obj %}
+                <article class="cake-card">
+                    <a href="{% url 'cake_detail' cake.id %}" class="cake-card-img">
+                        {% if cake.photo %}
+                            <img src="{{ cake.photo.url }}" alt="{{ cake.title }}" width="320" height="220" loading="lazy">
+                        {% else %}
+                            <div class="img-placeholder" role="img" aria-label="Торт {{ cake.title }}">
+                                <span>{{ cake.get_category_display }}</span>
+                            </div>
+                        {% endif %}
+                    </a>
+                    <div class="cake-card-body">
+                        <span class="cake-meta">От {{ cake.min_weight_kg|floatformat:1 }} кг • {{ cake.default_filling.name }}</span>
+                        <h3><a href="{% url 'cake_detail' cake.id %}">{{ cake.title }}</a></h3>
+                        <p class="cake-desc">{{ cake.description|truncatechars:95 }}</p>
+                        <div class="cake-card-footer">
+                            <span class="cake-price">{{ cake.default_filling.price_per_kg|floatformat:0 }} &#8381;/кг</span>
+                            <a href="{% url 'cake_detail' cake.id %}" class="btn btn-outline btn-sm">Подробнее</a>
+                        </div>
+                    </div>
+                </article>
+            {% empty %}
+                <div class="empty-box">
+                    <p>По вашему запросу ничего не найдено. Попробуйте изменить фильтры или собрать свой торт.</p>
+                    <a href="{% url 'catalog' %}" class="btn btn-primary">Показать все торты</a>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if page_obj.has_other_pages %}
+            <nav class="pagination" aria-label="Навигация по страницам каталога">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}&q={{ query }}&category={{ selected_category }}&filling={{ selected_filling }}" class="page-link">&larr; Назад</a>
+                {% endif %}
+                <span class="page-current">Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}</span>
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}&q={{ query }}&category={{ selected_category }}&filling={{ selected_filling }}" class="page-link">Вперёд &rarr;</a>
+                {% endif %}
+            </nav>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

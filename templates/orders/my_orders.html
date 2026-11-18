@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Мои заказы — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h1>История заказов</h1>
+            <a href="{% url 'constructor' %}" class="btn btn-primary">Новый заказ</a>
+        </div>
+
+        <div class="orders-list">
+            {% for order in orders %}
+                <article class="order-item-card">
+                    <div class="order-item-head">
+                        <div>
+                            <h3>Заказ № {{ order.order_number }}</h3>
+                            <span class="text-muted">Дата выдачи: {{ order.production_day.work_date|date:"d.m.Y" }} • {{ order.get_delivery_method_display }}</span>
+                        </div>
+                        <span class="status-badge status-{{ order.status }}">{{ order.get_status_display }}</span>
+                    </div>
+                    <div class="order-item-body">
+                        <p><strong>Позиций в заказе:</strong> {{ order.items.count }} • <strong>Общий вес:</strong> {{ order.total_weight_kg|floatformat:1 }} кг</p>
+                        <p class="order-sum">Сумма: <strong>{{ order.total_amount|floatformat:0 }} &#8381;</strong></p>
+                    </div>
+                </article>
+            {% empty %}
+                <p class="empty-state">У вас пока нет оформленных заказов.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

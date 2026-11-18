@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Производственные смены цеха — ИС «Кондитерская»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>График смен и загрузка цеха</h1>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Дата смены</th>
+                        <th>Лимит веса (кг)</th>
+                        <th>Забронировано (кг)</th>
+                        <th>Заказов</th>
+                        <th>Статус смены</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for day in days %}
+                        <tr>
+                            <td><strong>{{ day.work_date|date:"d.m.Y" }}</strong></td>
+                            <td>{{ day.max_weight_kg|floatformat:1 }} кг</td>
+                            <td>{{ day.booked_weight_kg|floatformat:1 }} кг</td>
+                            <td>{{ day.orders.count }}</td>
+                            <td>{% if day.is_closed %}Закрыта{% else %}Открыта для записи{% endif %}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

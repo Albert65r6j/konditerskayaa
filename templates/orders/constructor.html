@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}Конструктор торта — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>Онлайн-конструктор торта</h1>
+        <p class="text-muted section-lead">Выберите основу, начинку, желаемый вес и дату выдачи. Расчёт стоимости выполняется автоматически.</p>
+
+        <form method="post" enctype="multipart/form-data" class="constructor-grid" id="constructorForm" novalidate>
+            {% csrf_token %}
+            <div class="form-panel">
+                <div class="form-block">
+                    <h2>1. Состав и вес торта</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="spongeSelect">Вид коржей *</label>
+                            <select id="spongeSelect" name="sponge" class="form-control" required>
+                                {% for sponge in sponges %}
+                                    <option value="{{ sponge.id }}" data-price="{{ sponge.extra_price_per_kg }}" {% if selected_cake and selected_cake.default_sponge_id == sponge.id %}selected{% endif %}>
+                                        {{ sponge.name }} (+{{ sponge.extra_price_per_kg|floatformat:0 }} &#8381;/кг)
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fillingSelect">Начинка *</label>
+                            <select id="fillingSelect" name="filling" class="form-control" required>
+                                {% for filling in fillings %}
+                                    <option value="{{ filling.id }}" data-price="{{ filling.price_per_kg }}" {% if selected_cake and selected_cake.default_filling_id == filling.id %}selected{% endif %}>
+                                        {{ filling.name }} ({{ filling.price_per_kg|floatformat:0 }} &#8381;/кг)
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="weightInput">Вес торта (от 1.5 до 15 кг) *</label>
+                            <input type="number" id="weightInput" name="weight_kg" class="form-control" step="0.5" min="1.5" max="15" value="{{ selected_cake.min_weight_kg|default:'2.0' }}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inscriptionInput">Надпись на торте (до 60 символов)</label>
+                            <input type="text" id="inscriptionInput" name="inscription" maxlength="60" class="form-control" placeholder="Например: С Днём Рождения!">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <h2>2. Декор и эскиз оформления</h2>
+                    <div class="decor-checklist">
+                        {% for decor in decors %}
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="decors" value="{{ decor.id }}" data-price="{{ decor.price }}">
+                                <span>{{ decor.name }} (+{{ decor.price|floatformat:0 }} &#8381;)</span>
+                            </label>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sketchInput">Прикрепить свой эскиз (JPG, PNG, WEBP до 5 МБ)</label>
+                        <input type="file" id="sketchInput" name="sketch" accept=".jpg,.jpeg,.png,.webp" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <h2>3. Дата выдачи и контакты</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateSelect">Доступная производственная смена *</label>
+                            <select id="dateSelect" name="production_day" class="form-control" required>
+                                {% for day in production_days %}
+                                    <option value="{{ day.id }}">{{ day.work_date|date:"d.m.Y" }} (свободно {{ day.remaining_weight_kg|floatformat:1 }} кг)</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneInput">Контактный телефон *</label>
+                            <input type="tel" id="phoneInput" name="phone" class="form-control" placeholder="+7 (900) 123-45-67" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addressInput">Адрес доставки или комментарий</label>
+                        <textarea id="addressInput" name="delivery_address" rows="3" class="form-control" placeholder="Укажите улицу, дом, квартиру или выберите самовывоз из кондитерской"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="summary-panel">
+                <h2>Итоговый расчёт</h2>
+                <ul class="summary-list">
+                    <li><span>Вес изделия:</span> <strong id="summaryWeight">2.0 кг</strong></li>
+                    <li><span>Выбранный декор:</span> <strong id="summaryDecor">0 &#8381;</strong></li>
+                </ul>
+                <div class="summary-total">
+                    <span>К оплате:</span>
+                    <strong id="summaryTotal">3 600 &#8381;</strong>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+                <p class="summary-note">Нажимая кнопку, вы подтверждаете бронирование производственной мощности цеха на выбранную дату.</p>
+            </aside>
+        </form>
+    </div>
+</section>
+{% endblock %}

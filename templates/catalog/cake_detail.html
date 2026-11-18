@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ cake.title }} — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="{% url 'home' %}">Главная</a> / <a href="{% url 'catalog' %}">Каталог</a> / <span>{{ cake.title }}</span>
+        </nav>
+
+        <article class="detail-grid">
+            <div class="detail-media">
+                {% if cake.photo %}
+                    <img src="{{ cake.photo.url }}" alt="{{ cake.title }}" width="560" height="420">
+                {% else %}
+                    <div class="img-placeholder detail-placeholder" role="img" aria-label="{{ cake.title }}">
+                        <span>{{ cake.get_category_display }}</span>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="detail-info">
+                <span class="badge-accent">{{ cake.get_category_display }} • Рейтинг {{ cake.rating|floatformat:1 }} / 5</span>
+                <h1>{{ cake.title }}</h1>
+                <p class="detail-price">{{ cake.default_filling.price_per_kg|floatformat:0 }} &#8381; / кг</p>
+                <p class="detail-desc">{{ cake.description }}</p>
+
+                <ul class="specs-list">
+                    <li><strong>Базовые коржи:</strong> {{ cake.default_sponge.name }}</li>
+                    <li><strong>Базовая начинка:</strong> {{ cake.default_filling.name }} ({{ cake.default_filling.calories_per_100g }} ккал / 100 г)</li>
+                    <li><strong>Минимальный вес заказа:</strong> от {{ cake.min_weight_kg|floatformat:1 }} кг</li>
+                </ul>
+
+                <div class="detail-actions">
+                    <a href="{% url 'constructor' %}?base_cake={{ cake.id }}" class="btn btn-primary">Оформить и настроить в конструкторе</a>
+                    <a href="{% url 'catalog' %}" class="btn btn-outline">Вернуться в каталог</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock %}

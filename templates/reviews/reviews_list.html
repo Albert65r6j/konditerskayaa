@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Отзывы покупателей — Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>Отзывы наших клиентов</h1>
+        <div class="reviews-grid">
+            {% for review in page_obj %}
+                <article class="review-card">
+                    <div class="review-top">
+                        <strong>{{ review.author.first_name|default:review.author.username }}</strong>
+                        <span class="review-rating">Оценка: {{ review.rating }} / 5</span>
+                    </div>
+                    <p class="review-text">{{ review.text }}</p>
+                    <span class="review-date">Заказ № {{ review.order.order_number }} • {{ review.created_at|date:"d.m.Y" }}</span>
+                </article>
+            {% empty %}
+                <p class="empty-state">Опубликованных отзывов пока нет.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
