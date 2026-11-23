@@ -16,13 +16,13 @@
                     <div class="order-item-head">
                         <div>
                             <h3>Заказ № {{ order.order_number }}</h3>
-                            <span class="text-muted">Дата выдачи: {{ order.production_day.work_date|date:"d.m.Y" }} • {{ order.get_delivery_method_display }}</span>
+                            <span class="text-muted">Дата выдачи: {{ order.production_day.shift_date|date:"d.m.Y" }} • {% if order.delivery_type == 'DELIVERY' %}Доставка курьером{% else %}Самовывоз из студии{% endif %}</span>
                         </div>
                         <span class="status-badge status-{{ order.status }}">{{ order.get_status_display }}</span>
                     </div>
                     <div class="order-item-body">
                         <p><strong>Позиций в заказе:</strong> {{ order.items.count }} • <strong>Общий вес:</strong> {{ order.total_weight_kg|floatformat:1 }} кг</p>
-                        <p class="order-sum">Сумма: <strong>{{ order.total_amount|floatformat:0 }} &#8381;</strong></p>
+                        <p class="order-sum">Сумма: <strong>{{ order.total_price|floatformat:0 }} &#8381;</strong></p>
                     </div>
                 </article>
             {% empty %}
