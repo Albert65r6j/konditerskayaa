@@ -74,3 +74,10 @@ class OrderConstructorForm(forms.Form):
                     f'На выбранную дату свободно только {remaining} кг. Выберите другую смену или уменьшите вес.'
                 )
         return cleaned_data
+    
+    def clean_phone(self):
+        phone = self.cleaned_data.get('phone', '').strip()
+        digits = ''.join(ch for ch in phone if ch.isdigit())
+        if len(digits) < 10:
+            raise forms.ValidationError('Введите корректный номер телефона (не менее 10 цифр).')
+        return phone
