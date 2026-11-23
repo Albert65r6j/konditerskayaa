@@ -96,6 +96,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!isValid) e.preventDefault();
+                        if (!isValid) {
+                e.preventDefault();
+            } else {
+                const submitBtn = constructorForm.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Оформление заказа...';
+                }
+            }
+
         });
     }
 
