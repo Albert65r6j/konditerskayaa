@@ -21,8 +21,13 @@ class OrderConstructorForm(forms.Form):
         min_value=Decimal('1.5'),
         max_value=Decimal('15.0'),
         decimal_places=1,
+        error_messages={
+            'min_value': 'Минимальный вес торта составляет 1.5 кг.',
+            'max_value': 'Максимальный вес торта по онлайн-заказу — 15.0 кг.',
+        },
         widget=forms.NumberInput(attrs={'class': 'form-control', 'id': 'weightInput', 'step': '0.5'})
     )
+
     inscription = forms.CharField(
         label='Надпись на торте',
         max_length=60,
