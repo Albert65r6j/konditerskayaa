@@ -16,7 +16,8 @@ def index(request):
 
 def catalog_list(request):
     cakes_qs = BaseCake.objects.filter(is_active=True).select_related('default_filling', 'default_sponge').order_by('-rating', 'title')
-    query = request.GET.get('q', '').strip()
+    query = ' '.join(request.GET.get('q', '').split())
+
     category = request.GET.get('category', '').strip()
     filling_id = request.GET.get('filling', '').strip()
 
