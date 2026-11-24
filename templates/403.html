@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}403 — Доступ запрещён | Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container empty-box">
+        <span class="badge-accent">Ошибка 403 • Доступ ограничен</span>
+        <h1>У вас нет прав для просмотра этой страницы</h1>
+        <p class="text-muted section-lead">Данный раздел предназначен только для сотрудников кондитерского цеха или администратора. Вы можете вернуться на главную страницу или выбрать готовый торт в каталоге.</p>
+        <div class="detail-actions" style="justify-content: center; margin-top: 20px;">
+            <a href="{% url 'home' %}" class="btn btn-primary">На главную</a>
+            <a href="{% url 'catalog' %}" class="btn btn-outline">Перейти в каталог</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

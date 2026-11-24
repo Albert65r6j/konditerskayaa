@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}404 — Страница не найдена | Кондитерская «Ваниль &amp; Пряность»{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container empty-box">
+        <span class="badge-accent">Ошибка 404 • Страница не найдена</span>
+        <h1>К сожалению, такой страницы или рецепта не существует</h1>
+        <p class="text-muted section-lead">Возможно, ссылка устарела или в адресе допущена опечатка. Воспользуйтесь быстрым поиском по каталогу тортов или вернитесь на главную.</p>
+        <form method="get" action="{% url 'catalog' %}" class="filter-bar" style="max-width: 540px; margin: 20px auto;">
+            <div class="filter-group filter-search">
+                <input type="text" name="q" class="form-control" placeholder="Найти торт по названию...">
+            </div>
+            <button type="submit" class="btn btn-primary">Найти</button>
+        </form>
+        <div class="detail-actions" style="justify-content: center;">
+            <a href="{% url 'home' %}" class="btn btn-outline">Вернуться на главную</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
