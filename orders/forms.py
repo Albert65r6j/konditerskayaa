@@ -3,6 +3,7 @@ from django import forms
 from django.db.models import F
 from catalog.models import Decor, Filling, SpongeType
 from production.models import ProductionDay
+from PIL import Image
 
 
 class OrderConstructorForm(forms.Form):
@@ -63,9 +64,21 @@ class OrderConstructorForm(forms.Form):
 
     def clean_sketch(self):
         file = self.cleaned_data.get('sketch')
-        if file and file.size > 5 * 1024 * 1024:
+        if not file:
+            return file
+        if file.size > 5 * 1024 * 1024:
             raise forms.ValidationError('Размер файла эскиза не должен превышать 5 МБ.')
+        filename = file.name.lower()
+        if filename.count('.') > 1 or not filename.endswith(('.jpg', '.jpeg', '.png', '.webp')):
+            raise forms.ValidationError('Запрещённое или двойное расширение файла. Разрешены только JPG, PNG, WEBP.')
+        try:
+            img = Image.open(file)
+            img.verify()
+            file.seek(0)
+        except Exception:
+            raise forms.ValidationError('Файл повреждён или не является корректным изображением.')
         return file
+
 
     def clean(self):
         cleaned_data = super().clean()
